@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="QuadSphereSettings" load_steps=2 format=3 uid="uid://dgu1jxjj75uss"]
+
+[ext_resource type="Script" path="res://scripts/resources/quad_sphere_settings.gd" id="1_6l8xu"]
+
+[resource]
+script = ExtResource("1_6l8xu")
+resolution = 20
