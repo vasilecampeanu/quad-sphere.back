@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwkqxia81ybri"]
+[gd_scene load_steps=3 format=3 uid="uid://dwkqxia81ybri"]
 
 [ext_resource type="Script" path="res://scripts/quadrilateral_face.gd" id="1_4irhn"]
+[ext_resource type="Script" path="res://scenes/bounding_box.gd" id="2_si8t4"]
 
 [node name="QuadrilateralFace" type="MeshInstance3D"]
 script = ExtResource("1_4irhn")
+
+[node name="BoundingBox" type="MeshInstance3D" parent="."]
+script = ExtResource("2_si8t4")

@@ -68,11 +68,7 @@ func build(settings: QuadSphereSettings, normal: Vector3):
 	arrays[Mesh.ARRAY_VERTEX] = vertex_array
 	arrays[Mesh.ARRAY_NORMAL] = normal_array
 	arrays[Mesh.ARRAY_TEX_UV] = uv_array
-	arrays[Mesh.ARRAY_INDEX] = index_array
+	arrays[Mesh.ARRAY_INDEX]  = index_array
 
-	call_deferred("_update_mesh", arrays)
-
-func _update_mesh(arrays : Array):
-	var _mesh := ArrayMesh.new()
-	_mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
-	self.mesh = _mesh
+	mesh = ArrayMesh.new()
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)

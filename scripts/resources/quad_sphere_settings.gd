@@ -18,4 +18,3 @@ func on_setting_changes():
 	if not self._quad_sphere:
 		return
 	self._quad_sphere.generate()
-
